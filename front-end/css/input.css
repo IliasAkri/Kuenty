@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts */
+.font-dmono {
+  font-family: 'Inter', monospace;
+}
+
+/* things tailwind doesn't have for some reason */
+.vertical-text {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+/* link treatment */
+
+#linktest>a {
+  font-weight: bold;
+}
+
+#linktest>a:hover {
+  color: black;
+}
+
+a {
+  text-decoration-line: none !important;
+}
+
+footer>a {
+  color: yellow;
+}
+
+footer>a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* individual items */
+
+#navbar>* {
+  padding: 1.25rem;
+}
+
+/* let's get funky!!! */
+/* NOTE: these are nonstandard and will not show in older browsers*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1E293B;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #EF4444;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a33030;
+}
+
+.profilegrid{
+  grid-auto-rows: 200px 200px !important;
+  grid-auto-flow: dense;
+}
